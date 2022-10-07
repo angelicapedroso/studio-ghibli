@@ -1,6 +1,10 @@
+import NavBar from '../../components/NavBar';
+
 function People() {
   return (
-    <div>people</div>
+    <div>
+      <NavBar />
+    </div>
   );
 }
 

@@ -1,6 +1,6 @@
 import NavBar from '../../components/NavBar';
 
-function Home() {
+function Locations() {
   return (
     <div>
       <NavBar />
@@ -8,4 +8,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Locations;

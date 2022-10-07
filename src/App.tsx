@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import Film from './pages/Film';
+import Film from './pages/Films';
 import People from './pages/People';
-import Location from './pages/Location';
+import Locations from './pages/Locations';
 import NotFound from './pages/NotFound';
 
 function App() {
@@ -11,9 +11,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/film" element={ <Film /> } />
+          <Route path="/films" element={ <Film /> } />
           <Route path="/people" element={ <People /> } />
-          <Route path="/location" element={ <Location /> } />
+          <Route path="/locations" element={ <Locations /> } />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

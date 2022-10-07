@@ -4,6 +4,9 @@ function index() {
   return (
     <nav>
       <ul>
+      <li>
+          <Link to="/">Studio Ghibli</Link>
+        </li>
         <li>
           <Link to="/films">Films</Link>
         </li>
@@ -11,7 +14,7 @@ function index() {
           <Link to="/people">People</Link>
         </li>
         <li>
-          <Link to="/people">People</Link>
+          <Link to="/locations">Locations</Link>
         </li>
       </ul>
     </nav>
