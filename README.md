@@ -1,46 +1,48 @@
-# Getting Started with Create React App
+# Studio Ghibli
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é um teste proposto pela empresa [Clubbi](https://www.clubbi.com.br/), para a vaga de desenvolvedor front-end.
 
-## Available Scripts
+## Objetivo
 
-In the project directory, you can run:
+O objetivo do teste é criar uma aplicação web que consuma a API do Studio Ghibli e exiba os dados.
 
-### `npm start`
+Através da aplicação, o usuário deve conseguir procurar por filmes, pessoas e locais. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Tecnologias
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- React
+- Typescript
+- Styled Components
+- Axios
 
-### `npm test`
+## API
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A API do Studio Ghibli pode ser acessada através do link: https://ghibliapi.herokuapp.com/
 
-### `npm run build`
+## Instalação
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Para instalar o projeto, basta clonar o repositório e instalar as dependências:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone git@github.com:angelicapedroso/studio-ghibli.git
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+cd frontend-test
 
-### `npm run eject`
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Execução
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Para executar o projeto, basta executar o comando:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+npm start
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Deploy
 
-## Learn More
+Link da aplicação:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Autor
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[Angélica Pedroso](https://www.linkedin.com/in/angelicapedroso/)
