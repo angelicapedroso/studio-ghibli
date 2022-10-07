@@ -2,15 +2,19 @@ import { Link } from 'react-router-dom';
 
 function index() {
   return (
-    <div>
-      <nav>
+    <nav>
       <ul>
         <li>
-          <Link to="/">Studio Ghibli</Link>
+          <Link to="/films">Films</Link>
+        </li>
+        <li>
+          <Link to="/people">People</Link>
+        </li>
+        <li>
+          <Link to="/people">People</Link>
         </li>
       </ul>
     </nav>
-    </div>
   );
 }
 
