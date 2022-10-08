@@ -6,7 +6,7 @@ const useFilms = () => {
   const { films, setFilms } = useContext(GlobalContext);
 
   const fetchFilms = async () => {
-    const data = await fetchApi('/films');
+    const data = await fetchApi('films');
     setFilms(data);
   };
 
