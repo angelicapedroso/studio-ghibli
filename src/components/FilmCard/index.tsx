@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { IFilm } from '../../interfaces/Film';
-import DetailsButton from '../DetailsButton';
+import DetailsButton from '../FilmDetailsButton';
 
 function FilmCard({ films }: { films: IFilm[] }) {
   const navigate = useNavigate();
