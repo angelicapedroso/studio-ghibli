@@ -1,9 +1,7 @@
 import usePeople from '../../hooks/people.hook';
+import { IPeople } from '../../interfaces/People';
 
-function People() {
-  const people = usePeople();
-  console.log(people);
-
+function People({ people }: { people: IPeople[] }) {
   return (
     <div>
       <h1>People</h1>

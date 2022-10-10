@@ -16,7 +16,7 @@ function Locations() {
       <NavBar />
       <SearchBar placeholder="search a location" />
       {
-        filtered.length > 0 ? <LocationsCard locations={filtered} /> : <h1>No locations found</h1>
+        filtered.length > 0 ? <LocationsCard locations={filtered} /> : <h1>No location found</h1>
       }
     </div>
   );
