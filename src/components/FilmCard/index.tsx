@@ -1,6 +1,13 @@
+import { useNavigate } from 'react-router-dom';
 import { IFilm } from '../../interfaces/Film';
 
 function FilmCard({ films }: { films: IFilm[] }) {
+  const navigate = useNavigate();
+
+  const handleClick = (id: string | undefined) => {
+    navigate(`/details/${id}`);
+  };
+
   return (
     <div>
       <h1>Films</h1>
@@ -10,14 +17,12 @@ function FilmCard({ films }: { films: IFilm[] }) {
             <div key={film.id}>
               <h2>{film.title}</h2>
               <img src={film.image} alt={film.title} />
-              <p>{film.description}</p>
-              <ul>
-                <li>Director: {film.director}</li>
-                <li>Producer: {film.producer}</li>
-                <li>Release date: {film.release_date}</li>
-                <li>Running time: {film.running_time}</li>
-                <li>Rating Score: {film.rt_score}</li>
-              </ul>
+              <button
+                type="button"
+                onClick={() => handleClick(film.id)}
+              >
+                Details
+              </button>
             </div>
           ))
         }

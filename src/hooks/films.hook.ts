@@ -17,4 +17,19 @@ const useFilms = () => {
   return films;
 };
 
+export const useFilm = (id: string | undefined) => {
+  const { film, setFilm } = useContext(GlobalContext);
+
+  const fetchFilm = async () => {
+    const data = await fetchApi(`films/${id}`);
+    setFilm(data);
+  };
+
+  useEffect(() => {
+    fetchFilm();
+  }, [id]);
+
+  return film;
+};
+
 export default useFilms;
