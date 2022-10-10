@@ -1,11 +1,13 @@
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { IFilm } from '../../interfaces/Film';
+import DetailsButton from '../DetailsButton';
 
 function FilmCard({ films }: { films: IFilm[] }) {
   const navigate = useNavigate();
 
-  const handleClick = (id: string | undefined) => {
-    navigate(`/details/${id}`);
+  const handleClick = (filmId: string | undefined) => {
+    navigate(`/details-film/${filmId}`);
   };
 
   return (
@@ -17,12 +19,7 @@ function FilmCard({ films }: { films: IFilm[] }) {
             <div key={film.id}>
               <h2>{film.title}</h2>
               <img src={film.image} alt={film.title} />
-              <button
-                type="button"
-                onClick={() => handleClick(film.id)}
-              >
-                Details
-              </button>
+              <DetailsButton filmId={film.id} handleClick={handleClick} />
             </div>
           ))
         }
