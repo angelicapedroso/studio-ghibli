@@ -1,4 +1,4 @@
-export interface ILocations {
+export interface ILocation {
   id: string;
   name: string;
   climate: string;

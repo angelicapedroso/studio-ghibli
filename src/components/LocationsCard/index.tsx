@@ -1,8 +1,6 @@
-import useLocations from '../../hooks/locations.hook';
+import { ILocation } from '../../interfaces/Location';
 
-function Locations() {
-  const locations = useLocations();
-
+function Locations({ locations }: { locations: ILocation[] }) {
   return (
     <div>
       <h1>Locations</h1>
