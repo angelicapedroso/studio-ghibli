@@ -12,6 +12,8 @@ function People() {
     setSearch(event.target.value);
   };
 
+  const handleClick = () => setSearch('');
+
   const filtered = people.filter((p) => p.name.toLowerCase().includes(search.toLowerCase()));
 
   return (
@@ -21,6 +23,7 @@ function People() {
         placeholder="search a people"
         value={search}
         onChange={handleChange}
+        handleClick={handleClick}
       />
       {
         filtered.length > 0 ? <PeopleCard people={filtered} /> : <h1>No person found</h1>

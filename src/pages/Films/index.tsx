@@ -12,6 +12,8 @@ function Films() {
     setSearch(event.target.value);
   };
 
+  const handleClick = () => setSearch('');
+
   const filtered = films.filter((f) => f.title.toLowerCase().includes(search.toLowerCase()));
 
   return (
@@ -21,6 +23,7 @@ function Films() {
         placeholder="search a film"
         value={search}
         onChange={handleChange}
+        handleClick={handleClick}
       />
       {
         filtered.length > 0 ? <FilmCard films={filtered} /> : <h1>No films found</h1>

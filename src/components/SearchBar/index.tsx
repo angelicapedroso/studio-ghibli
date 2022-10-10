@@ -1,14 +1,17 @@
-function SearchBar({ placeholder, value, onChange } : {
+function SearchBar({
+  placeholder, value, onChange, handleClick,
+}: {
   placeholder: string, value: string, onChange: (
-    event: React.ChangeEvent<HTMLInputElement>) => void }) {
+    event: React.ChangeEvent<HTMLInputElement>) => void, handleClick: () => void
+}) {
   return (
     <div>
       <input
         type="text"
         placeholder={placeholder}
         value={value}
-        onChange={onChange}
-      />
+        onChange={onChange} />
+      <button type="button" onClick={handleClick}>x</button>
     </div>
   );
 }

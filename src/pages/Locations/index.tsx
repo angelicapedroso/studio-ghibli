@@ -12,6 +12,8 @@ function Locations() {
     setSearch(event.target.value);
   };
 
+  const handleClick = () => setSearch('');
+
   const filtered = locations.filter((l) => l.name.toLowerCase().includes(search.toLowerCase()));
 
   return (
@@ -21,6 +23,7 @@ function Locations() {
         placeholder="search a location"
         value={search}
         onChange={handleChange}
+        handleClick={handleClick}
       />
       {
         filtered.length > 0 ? <LocationsCard locations={filtered} /> : <h1>No location found</h1>
