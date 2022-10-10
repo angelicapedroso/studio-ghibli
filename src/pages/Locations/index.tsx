@@ -1,20 +1,27 @@
-import { useContext } from 'react';
+import { useState } from 'react';
 import LocationsCard from '../../components/LocationsCard';
 import NavBar from '../../components/NavBar';
 import SearchBar from '../../components/SearchBar';
-import { GlobalContext } from '../../context/Context';
 import useLocations from '../../hooks/locations.hook';
 
 function Locations() {
   const locations = useLocations();
-  const { search } = useContext(GlobalContext);
+  const [search, setSearch] = useState('');
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearch(event.target.value);
+  };
 
   const filtered = locations.filter((l) => l.name.toLowerCase().includes(search.toLowerCase()));
 
   return (
     <div>
       <NavBar />
-      <SearchBar placeholder="search a location" />
+      <SearchBar
+        placeholder="search a location"
+        value={search}
+        onChange={handleChange}
+      />
       {
         filtered.length > 0 ? <LocationsCard locations={filtered} /> : <h1>No location found</h1>
       }

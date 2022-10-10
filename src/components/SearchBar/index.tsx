@@ -1,20 +1,13 @@
-import { useContext } from 'react';
-import { GlobalContext } from '../../context/Context';
-
-function SearchBar({ placeholder }: { placeholder: string }) {
-  const { search, setSearch } = useContext(GlobalContext);
-
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setSearch(event.target.value);
-  };
-
+function SearchBar({ placeholder, value, onChange } : {
+  placeholder: string, value: string, onChange: (
+    event: React.ChangeEvent<HTMLInputElement>) => void }) {
   return (
     <div>
       <input
         type="text"
         placeholder={placeholder}
-        value={search}
-        onChange={handleChange}
+        value={value}
+        onChange={onChange}
       />
     </div>
   );

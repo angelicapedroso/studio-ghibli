@@ -1,20 +1,27 @@
-import { useContext } from 'react';
+import { useState } from 'react';
 import NavBar from '../../components/NavBar';
 import PeopleCard from '../../components/PeopleCard';
 import SearchBar from '../../components/SearchBar';
-import { GlobalContext } from '../../context/Context';
 import usePeople from '../../hooks/people.hook';
 
 function People() {
   const people = usePeople();
-  const { search } = useContext(GlobalContext);
+  const [search, setSearch] = useState('');
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearch(event.target.value);
+  };
 
   const filtered = people.filter((p) => p.name.toLowerCase().includes(search.toLowerCase()));
 
   return (
     <div>
       <NavBar />
-      <SearchBar placeholder="search a people" />
+      <SearchBar
+        placeholder="search a people"
+        value={search}
+        onChange={handleChange}
+      />
       {
         filtered.length > 0 ? <PeopleCard people={filtered} /> : <h1>No person found</h1>
       }
