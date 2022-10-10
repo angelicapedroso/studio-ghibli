@@ -6,7 +6,7 @@ function People() {
   return (
     <div>
       <NavBar />
-      <SearchBar />
+      <SearchBar placeholder="search a people" />
       <PeopleCard />
     </div>
   );

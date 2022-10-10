@@ -6,7 +6,7 @@ function Locations() {
   return (
     <div>
       <NavBar />
-      <SearchBar />
+      <SearchBar placeholder="search a location" />
       <LocationsCard />
     </div>
   );

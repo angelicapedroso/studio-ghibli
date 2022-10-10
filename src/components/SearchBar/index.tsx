@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { GlobalContext } from '../../context/Context';
 
-function SearchBar() {
+function SearchBar({ placeholder }: { placeholder: string }) {
   const { search, setSearch } = useContext(GlobalContext);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -12,11 +12,10 @@ function SearchBar() {
     <div>
       <input
         type="text"
-        placeholder="search"
+        placeholder={placeholder}
         value={search}
         onChange={handleChange}
       />
-      <button type="button">Search</button>
     </div>
   );
 }

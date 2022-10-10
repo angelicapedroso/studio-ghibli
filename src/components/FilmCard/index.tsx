@@ -1,8 +1,6 @@
-import useFilms from '../../hooks/films.hook';
+import { IFilm } from '../../interfaces/Film';
 
-function FilmCard() {
-  const films = useFilms();
-
+function FilmCard({ films }: { films: IFilm[] }) {
   return (
     <div>
       <h1>Films</h1>
