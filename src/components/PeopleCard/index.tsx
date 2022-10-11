@@ -1,15 +1,15 @@
-import usePeople from '../../hooks/people.hook';
 import { IPeople } from '../../interfaces/People';
+import './styles.css';
 
 function People({ people }: { people: IPeople[] }) {
   return (
-    <div>
-      <h1>People</h1>
-      <div>
+    <div className="container-people">
+      <h1 className="page-title">People</h1>
+      <div className="card-people-grid">
         {
           people.map((p) => (
-            <div key={p.id}>
-              <h3>{p.name}</h3>
+            <div className="card-people-content" key={p.id}>
+              <h3 className="title-people">{p.name}</h3>
               <ul>
                 <li>Gender: {p.gender}</li>
                 <li>Age: {p.age}</li>
