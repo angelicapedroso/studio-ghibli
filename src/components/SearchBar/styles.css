@@ -26,3 +26,14 @@ button:hover {
   opacity: 0.7;
   transition: all 0.3 ease 0s;
 }
+
+::placeholder {
+  padding: 9px;
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 768px) {
+    .search-icon {
+      display: none;
+    }
+  }
