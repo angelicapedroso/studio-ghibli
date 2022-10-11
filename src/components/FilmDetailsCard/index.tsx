@@ -15,18 +15,18 @@ function FilmDetailsCard() {
           </div>
           <div className="container-details-content">
             <h2 className="details-title">{film.title}</h2>
+            <h3>Director:</h3>
+            <p>{film.director}</p>
+            <h3>Producer:</h3>
+            <p>{film.producer}</p>
+            <h3>Release date:</h3>
+            <p>{film.release_date}</p>
+            <h3>Running time:</h3>
+            <p>{film.running_time} minutes</p>
+            <h3>Rating Score:</h3>
+            <p>{film.rt_score}</p>
             <h3>Description:</h3>
             <p>{film.description}</p>
-              <h3>Director:</h3>
-              <p>{film.director}</p>
-              <h3>Producer:</h3>
-              <p>{film.producer}</p>
-              <h3>Release date:</h3>
-              <p>{film.release_date}</p>
-              <h3>Running time:</h3>
-              <p>{film.running_time} minutes</p>
-              <h3>Rating Score:</h3>
-              <p>{film.rt_score}</p>
           </div>
         </div>
       }
