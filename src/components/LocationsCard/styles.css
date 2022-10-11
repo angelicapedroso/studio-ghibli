@@ -6,7 +6,7 @@
   border-bottom: 0.2rem solid #bbb;
 }
 
-.container-people {
+.container-location {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -16,15 +16,15 @@
   margin: 0 auto;
 }
 
-.card-people-grid {
+.card-location-grid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 1rem; 
+  margin: 1rem;  
 }
 
-.card-people-content {
+.card-location-content {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
@@ -36,17 +36,8 @@
   height: 13rem;
 }
 
-.title-people {
+.title-location {
   text-align: center;
   font-size: 1.1rem;
   font-weight: 600;
-}
-
-li {
-  list-style: none;
-  padding: 0.3rem;
-}
-
-span {
-  font-weight: 500;
 }

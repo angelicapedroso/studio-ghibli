@@ -11,10 +11,10 @@ function People({ people }: { people: IPeople[] }) {
             <div className="card-people-content" key={p.id}>
               <h3 className="title-people">{p.name}</h3>
               <ul>
-                <li>Gender: {p.gender}</li>
-                <li>Age: {p.age}</li>
-                <li>Eye Color: {p.eye_color}</li>
-                <li>Hair Color: {p.hair_color}</li>
+                <li><span>Gender:</span> {p.gender}</li>
+                <li><span>Age:</span> {p.age}</li>
+                <li><span>Eye Color:</span> {p.eye_color}</li>
+                <li><span>Hair Color:</span> {p.hair_color}</li>
               </ul>
             </div>
           ))

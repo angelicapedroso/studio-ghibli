@@ -1,18 +1,19 @@
 import { ILocation } from '../../interfaces/Location';
+import './styles.css';
 
 function Locations({ locations }: { locations: ILocation[] }) {
   return (
-    <div>
-      <h1>Locations</h1>
-      <div>
+    <div className="container-location">
+      <h1 className="page-title">Locations</h1>
+      <div className="card-location-grid">
         {
           locations.map((l) => (
-            <div key={l.id}>
-              <h3>{l.name}</h3>
+            <div className="card-location-content" key={l.id}>
+              <h3 className="title-location">{l.name}</h3>
               <ul>
-                <li>Climate: {l.climate}</li>
-                <li>Terrain: {l.terrain}</li>
-                <li>Surface Water: {l.surface_water}</li>
+                <li><span>Climate:</span> {l.climate}</li>
+                <li><span>Terrain:</span> {l.terrain}</li>
+                <li><span>Surface Water:</span> {l.surface_water}</li>
               </ul>
             </div>
           ))
