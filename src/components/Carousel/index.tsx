@@ -36,7 +36,7 @@ function Carousel() {
               <div className='swiper-slide'>
                 <img src={film.movie_banner} alt={film.title} />
                 <div className='content'>
-                  <h2 className='title'>{film.title}</h2>
+                  <h2 className='title-film'>{film.title}</h2>
                   <h3 className='original-title'>{film.original_title}</h3>
                   <p className='description'>{film.description}</p>
                   <p className='director'>{film.director}</p>

@@ -1,12 +1,15 @@
 import { Link } from 'react-router-dom';
+import './styles.css';
 
 function index() {
   return (
-    <nav>
+    <nav className="navbar">
       <ul>
-      <li>
+        <li className="title-navbar" >
           <Link to="/">Studio Ghibli</Link>
         </li>
+      </ul>
+      <ul>
         <li>
           <Link to="/films">Films</Link>
         </li>
