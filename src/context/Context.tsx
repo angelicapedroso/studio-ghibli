@@ -14,13 +14,15 @@ const DEFAULT_VALUE: PropsContext = {
   film: {
     id: '',
     title: '',
+    original_title: '',
     image: '',
+    movie_banner: '',
     description: '',
     director: '',
     producer: '',
     release_date: '',
     running_time: '',
-    rt_score: '',
+    rt_score: 0,
   },
   setFilm: () => {},
 };

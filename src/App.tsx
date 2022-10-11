@@ -5,6 +5,7 @@ import People from './pages/People';
 import Locations from './pages/Locations';
 import NotFound from './pages/NotFound';
 import FilmDetails from './pages/FilmDetails';
+import './assets/global.css';
 
 function App() {
   return (
