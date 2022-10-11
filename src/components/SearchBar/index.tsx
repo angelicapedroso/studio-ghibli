@@ -1,3 +1,5 @@
+import './styles.css';
+
 function SearchBar({
   placeholder, value, onChange, handleClick,
 }: {
@@ -5,7 +7,7 @@ function SearchBar({
     event: React.ChangeEvent<HTMLInputElement>) => void, handleClick: () => void
 }) {
   return (
-    <div>
+    <div className="container">
       <input
         type="text"
         placeholder={placeholder}
