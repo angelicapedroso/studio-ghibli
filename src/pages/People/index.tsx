@@ -20,7 +20,7 @@ function People() {
     <div>
       <NavBar />
       <SearchBar
-        placeholder="search a people"
+        placeholder="search a person"
         value={search}
         onChange={handleChange}
         handleClick={handleClick}
