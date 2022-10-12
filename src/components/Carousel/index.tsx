@@ -1,7 +1,7 @@
 // import { useContext, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper';
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 import { IFilm } from '../../interfaces/Film';
 import './styles.css';
 
@@ -11,19 +11,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import DetailsButton from '../FilmDetailsButton';
 import { GlobalContext } from '../../context/Context';
-import fetchApi from '../../utils/API';
 
 function Carousel() {
   const { films, setFilms } = useContext(GlobalContext);
-
-  const fetchFilms = async () => {
-    const data = await fetchApi('films');
-    setFilms(data);
-  };
-
-  useEffect(() => {
-    fetchFilms();
-  }, []);
 
   return (
     <div>
