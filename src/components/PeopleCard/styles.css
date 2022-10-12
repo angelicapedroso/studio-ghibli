@@ -4,7 +4,6 @@
   margin: 0.5rem 0;
   margin-bottom: 1rem;
   border-bottom: 0.2rem solid #bbb;
-  color: var(--secondary-color);
 }
 
 .container-people {
@@ -23,6 +22,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 1rem; 
+  border-radius: 0.5rem;
 }
 
 .card-people-content {
@@ -30,24 +30,34 @@
   justify-content: space-evenly;
   flex-direction: column;
   padding: 0 3rem;
-  border: 1px solid black;
   border-radius: 0.5rem;
   margin: 1rem;
   width: 20rem;
   height: 13rem;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-out;
+  background-color: var(--primary-color);
+}
+
+.card-people-content:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .title-people {
   text-align: center;
   font-size: 1.1rem;
   font-weight: 600;
+  color: var(--quinary-color);
 }
 
 li {
   list-style: none;
   padding: 0.3rem;
+  color: var(--tertiary-color);
 }
 
 span {
   font-weight: 500;
+  color: var(--quaternary-color);
 }

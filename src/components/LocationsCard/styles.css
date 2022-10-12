@@ -26,10 +26,19 @@
   margin: 1rem;
   width: 20rem;
   height: 13rem;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-out;
+  background-color: var(--primary-color);
+}
+
+.card-location-content:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .title-location {
   text-align: center;
   font-size: 1.1rem;
   font-weight: 600;
+  color: var(--quinary-color);
 }
