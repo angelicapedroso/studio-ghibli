@@ -14,10 +14,12 @@
   border-radius: 0.3rem;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
+  background: transparent;
+  border: 0.2rem solid var(--tertiary-color);
+  color: var(--tertiary-color);
 }
 
 .details-button:hover {
-  background-color: transparent;
-  color: blue;
-  border: 0.2rem solid blue;
+  background-color: var(--tertiary-color);
+  color: white;
 }
