@@ -44,7 +44,7 @@
 
 .card-banner {
   height: 75%;
-  padding: 0 0.5rem;
+  padding: 0.7rem;
   margin: 0.5rem;
   object-fit: cover;
   max-width: 100%;
@@ -71,13 +71,13 @@
 }
 
 .card-title {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
   margin: 0.1rem 0;
 }
 
 .card-director {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 400;
   margin: 0.1rem 0;
 }
