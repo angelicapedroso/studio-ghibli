@@ -40,7 +40,7 @@ npm start
 
 ## Deploy
 
-Link da aplicação:
+Link da aplicação: https://studio-ghibli-one.vercel.app/
 
 ## Autor
 
