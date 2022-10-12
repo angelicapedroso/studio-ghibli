@@ -6,14 +6,15 @@ Este projeto é um teste proposto pela empresa [Clubbi](https://www.clubbi.com.b
 
 O objetivo do teste é criar uma aplicação web que consuma a API do Studio Ghibli e exiba os dados.
 
-Através da aplicação, o usuário deve conseguir procurar por filmes, pessoas e locais. 
+Através da aplicação, o usuário deve conseguir visualizar os filmes do Studio Ghibli, os personagens e as localizações. Além disso, deve ser possível filtrar os filmes por título e os personagens e localização por nome.  
 
 ## Tecnologias
 
 - React
 - Typescript
-- Styled Components
+- CSS
 - Axios
+- React Router
 
 ## API
 
