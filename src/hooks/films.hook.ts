@@ -1,24 +1,9 @@
-import { useEffect, useContext } from 'react';
+import { useEffect, useState } from 'react';
 import fetchApi from '../utils/API';
-import { GlobalContext } from '../context/Context';
+import { IFilm } from '../interfaces/Film';
 
-const useFilms = () => {
-  const { films, setFilms } = useContext(GlobalContext);
-
-  const fetchFilms = async () => {
-    const data = await fetchApi('films');
-    setFilms(data);
-  };
-
-  useEffect(() => {
-    fetchFilms();
-  }, []);
-
-  return films;
-};
-
-export const useFilm = (id: string | undefined) => {
-  const { film, setFilm } = useContext(GlobalContext);
+const useFilm = (id: string | undefined) => {
+  const [film, setFilm] = useState({} as IFilm);
 
   const fetchFilm = async () => {
     const data = await fetchApi(`films/${id}`);
@@ -32,4 +17,4 @@ export const useFilm = (id: string | undefined) => {
   return film;
 };
 
-export default useFilms;
+export default useFilm;

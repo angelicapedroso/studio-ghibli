@@ -1,7 +1,7 @@
 // import { useContext, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper';
-import { useNavigate } from 'react-router-dom';
+import { useContext } from 'react';
 import { IFilm } from '../../interfaces/Film';
 import './styles.css';
 
@@ -9,11 +9,11 @@ import './styles.css';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import useFilms from '../../hooks/films.hook';
 import DetailsButton from '../FilmDetailsButton';
+import { GlobalContext } from '../../context/Context';
 
 function Carousel() {
-  const films = useFilms();
+  const { films } = useContext(GlobalContext);
 
   return (
     <div>

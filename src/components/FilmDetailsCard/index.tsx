@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import { useFilm } from '../../hooks/films.hook';
+import useFilm from '../../hooks/films.hook';
 import './styles.css';
 
 function FilmDetailsCard() {
