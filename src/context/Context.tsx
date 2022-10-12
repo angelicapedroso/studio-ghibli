@@ -1,5 +1,8 @@
-import React, { createContext, useMemo, useState } from 'react';
+import React, {
+  createContext, useEffect, useMemo, useState,
+} from 'react';
 import { IFilm } from '../interfaces/Film';
+import fetchApi from '../utils/API';
 
 type PropsContext = {
   films: IFilm[];
@@ -22,6 +25,15 @@ export const GlobalProvider = ({ children }: { children: React.ReactNode }) => {
   };
 
   const value = useMemo(() => memo, [memo]);
+
+  const fetchFilms = async () => {
+    const data = await fetchApi('films');
+    setFilms(data);
+  };
+
+  useEffect(() => {
+    fetchFilms();
+  }, []);
 
   return (
     <GlobalContext.Provider value={value}>
