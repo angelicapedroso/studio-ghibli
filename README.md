@@ -1,10 +1,8 @@
 # Studio Ghibli
 
-Este projeto é um teste proposto pela empresa [Clubbi](https://www.clubbi.com.br/), para a vaga de desenvolvedor front-end.
-
 ## Objetivo
 
-O objetivo do teste é criar uma aplicação web que consuma a API do Studio Ghibli e exiba os dados.
+O objetivo do projeto foi criar uma aplicação web que consuma a API do Studio Ghibli e exiba os dados.
 
 Através da aplicação, o usuário deve conseguir visualizar os filmes do Studio Ghibli, os personagens e as localizações. Além disso, deve ser possível filtrar os filmes por título e os personagens e localização por nome.  
 
