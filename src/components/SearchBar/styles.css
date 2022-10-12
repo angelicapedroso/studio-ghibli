@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  border: 2px solid var(--primary-color);
+  padding: 5px;
+  margin: 20px 0;
+  border-radius: 15px;
+  margin: 1.5% 10% 1.5% 10%;
+}
+
+input {
+  border: 0px;
+  background: none;
+  outline: 0;
+  color: var(--color-five);
+  font-size: 1.1rem;
+  flex: 1;
+}
+
+button {
+  border: 0px;
+  background: none;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all 0.3 ease 0s;
+}
+
+::placeholder {
+  padding: 9px;
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 768px) {
+    .search-icon {
+      display: none;
+    }
+  }

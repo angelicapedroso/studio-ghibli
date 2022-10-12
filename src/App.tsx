@@ -1,8 +1,11 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import Movie from './pages/Movie';
-import Search from './pages/Search';
+import Film from './pages/Films';
+import People from './pages/People';
+import Locations from './pages/Locations';
 import NotFound from './pages/NotFound';
+import FilmDetails from './pages/FilmDetails';
+import './assets/global.css';
 
 function App() {
   return (
@@ -10,8 +13,10 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="movie/id" element={<Movie />} />
-          <Route path="search" element={<Search />} />
+          <Route path="/films" element={ <Film /> } />
+          <Route path="/people" element={ <People /> } />
+          <Route path="/locations" element={ <Locations /> } />
+          <Route path="/details-film/:id" element={ <FilmDetails /> } />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

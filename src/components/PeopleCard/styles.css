@@ -1,0 +1,55 @@
+.container-people {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.card-people-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 1rem; 
+  border-radius: 0.5rem;
+}
+
+.card-people-content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 0 3rem;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  width: 20rem;
+  height: 13rem;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-out;
+  background-color: var(--primary-color);
+}
+
+.card-people-content:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.title-people {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--quinary-color);
+}
+
+li {
+  list-style: none;
+  padding: 0.3rem;
+  color: var(--quaternary-color);
+}
+
+span {
+  font-weight: 500;
+  color: var(--tertiary-color);
+}

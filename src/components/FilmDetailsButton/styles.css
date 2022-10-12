@@ -1,0 +1,26 @@
+.details-button {
+  font-size: large;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12rem;
+  height: 3rem;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+  margin: 0 auto;
+  border-radius: 0.3rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  background: transparent;
+  border: 0.2rem solid var(--tertiary-color);
+  color: var(--tertiary-color);
+}
+
+.details-button:hover {
+  background-color: var(--tertiary-color);
+  color: white;
+  transition: all 0.3s ease;
+}
