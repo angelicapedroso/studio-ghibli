@@ -1,22 +1,12 @@
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useState } from 'react';
 import FilmCard from '../../components/FilmCard';
 import NavBar from '../../components/NavBar';
 import SearchBar from '../../components/SearchBar';
 import { GlobalContext } from '../../context/Context';
-import fetchApi from '../../utils/API';
 
 function Films() {
-  const { films, setFilms } = useContext(GlobalContext);
+  const { films } = useContext(GlobalContext);
   const [search, setSearch] = useState('');
-
-  const fetchFilms = async () => {
-    const data = await fetchApi('films');
-    setFilms(data);
-  };
-
-  useEffect(() => {
-    fetchFilms();
-  }, []);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearch(event.target.value);
