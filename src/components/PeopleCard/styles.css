@@ -46,10 +46,10 @@
 li {
   list-style: none;
   padding: 0.3rem;
-  color: var(--tertiary-color);
+  color: var(--quaternary-color);
 }
 
 span {
   font-weight: 500;
-  color: var(--quaternary-color);
+  color: var(--tertiary-color);
 }

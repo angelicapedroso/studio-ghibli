@@ -32,7 +32,7 @@ function Carousel() {
         className="mySwiper"
       >
         {films
-          .filter((film: IFilm) => film.rt_score >= 94)
+          .filter((film: IFilm) => film.description.length < 350 && film.rt_score > 90)
           .map((film: IFilm) => (
             <SwiperSlide key={film.id}>
               <div className='swiper-slide'>
