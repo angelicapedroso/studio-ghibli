@@ -1,26 +1,25 @@
 # Studio Ghibli
 
-## Objetivo
-
-O objetivo do projeto foi criar uma aplicação web que consuma a API do Studio Ghibli e exiba os dados.
-
-Através da aplicação, o usuário deve conseguir visualizar os filmes do Studio Ghibli, os personagens e as localizações. Além disso, deve ser possível filtrar os filmes por título e os personagens e localização por nome.  
+Esta é uma aplicação web onde o usuário pode visualizar os filmes do Studio Ghibli, os personagens e as localizações. Além disso, é possível filtrar os filmes por título e os personagens e localização por nome.  
 
 ## Tecnologias
 
 - React
 - Typescript
+- Context API
 - CSS
 - Axios
-- React Router
+- React Router Dom
 
 ## API
 
-A API do Studio Ghibli pode ser acessada através do link: https://ghibliapi.herokuapp.com/
+A API do Studio Ghibli pode ser acessada através deste [link](https://ghibliapi.herokuapp.com/).
 
 ## Instalação
 
 Para instalar o projeto, basta clonar o repositório e instalar as dependências:
+
+Obs: É necessário ter o [Node.js](https://nodejs.org/en/) instalado.
 
 ```bash
 git clone git@github.com:angelicapedroso/studio-ghibli.git
@@ -40,7 +39,7 @@ npm start
 
 ## Deploy
 
-Link da aplicação: https://studio-ghibli-one.vercel.app/
+[Link da aplicação](https://studio-ghibli-one.vercel.app/)
 
 ## Autor
 
