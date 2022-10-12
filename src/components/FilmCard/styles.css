@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  background-color: #eee;
+  background-color: var(--background-color);
   margin: 0 auto;
   border-radius: 0.5rem;
 }
@@ -16,6 +16,7 @@
   margin: 0.5rem 0;
   margin-bottom: 1rem;
   border-bottom: 0.2rem solid #bbb;
+  color: var(--secondary-color);
 }
 
 .card-grid {
@@ -36,13 +37,13 @@
   width: 20rem;
   padding: 0.5rem;
   margin: 0.5rem;
-  border-radius: 0.5rem;
-  background-color: #ccc;
+  border-radius: 0.2rem;
+  background-color: var(--primary-color);
+  color: var(--quinary-color);
 }
 
 .card-banner {
   height: 75%;
-  border-radius: 1rem;
   padding: 0 0.5rem;
   margin: 0.5rem;
   object-fit: cover;
@@ -93,8 +94,9 @@
 .card-score {
   font-size: 1.8rem;
   font-weight: 600;
-  background-color: #38E54D;
+  background-color: var(--quaternary-color);
   padding: 0.8rem;
   border-radius: 0.5rem;
+  color: var(--primary-color);
 }
 

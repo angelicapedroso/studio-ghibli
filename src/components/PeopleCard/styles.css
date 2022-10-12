@@ -4,6 +4,7 @@
   margin: 0.5rem 0;
   margin-bottom: 1rem;
   border-bottom: 0.2rem solid #bbb;
+  color: var(--secondary-color);
 }
 
 .container-people {
