@@ -29,7 +29,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: rgb(159, 156, 156);
+  color: var(--quinary-color);
 }
 
 nav ul li a:hover {
@@ -43,8 +43,7 @@ nav ul li a:hover {
 
 label[for='bt_menu'] {
   padding: 5px;
-  background-color: #222;
-  color: #fff;
+  color: var(--quinary-color);
   text-align: center;
   font-size: 2rem;
   cursor: pointer;
@@ -63,8 +62,7 @@ label[for='bt_menu']:hover {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    background-color: #222;
-    transition: all 0.5s;
+    background-color: var(--primary-color);
   }
 
   .menu {
