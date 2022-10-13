@@ -1,6 +1,6 @@
 # Studio Ghibli
 
-Esta é uma aplicação web onde o usuário pode visualizar os filmes do Studio Ghibli, os personagens e as localizações. Além disso, é possível filtrar os filmes por título e os personagens e localização por nome.  
+Esta é uma aplicação web onde o usuário pode visualizar os filmes do Studio Ghibli, os personagens e as localizações. Além disso, é possível filtrar os filmes por título e os personagens e localização por nome.
 
 ## Tecnologias
 
@@ -10,6 +10,8 @@ Esta é uma aplicação web onde o usuário pode visualizar os filmes do Studio 
 - CSS
 - Axios
 - React Router Dom
+- Cypress
+- Docker
 
 ## API
 
