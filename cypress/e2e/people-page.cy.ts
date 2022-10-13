@@ -1,6 +1,6 @@
-describe('The films page', () => {
+describe('The people page', () => {
   it('test navbar', () => {
-    cy.visit('/films');
+    cy.visit('/people');
 
     cy.contains('a', 'Studio Ghibli').click();
     cy.url().should('include', '/');
@@ -16,20 +16,17 @@ describe('The films page', () => {
   });
 
   it('test content', () => {
-    cy.visit('/films');
-
-    cy.get('img').should('have.length', 22);
+    cy.visit('/people');
 
     cy.get('input').should('exist');
 
-    cy.get('input').get('[type="text"]').type('Totoro');
-    cy.contains('h2', 'My Neighbor Totoro');
+    cy.get('input').get('[type="text"]').type('haku');
+    cy.contains('h3', 'Haku');
+
+    cy.contains('h1', 'People');
 
     cy.get('input').get('[type="text"]').clear();
 
-    cy.contains('h2', 'Films');
-
-    cy.contains('button', 'Details').click();
-    cy.url().should('include', '/details-film');
+    cy.get('h3').should('have.length', 57);
   });
 });
