@@ -23,7 +23,7 @@ function FilmDetailsCard() {
             <p>{film.release_date}</p>
             <h3>Running time:</h3>
             <p>{film.running_time} minutes</p>
-            <h3>Rating Score:</h3>
+            <h3>Rating score:</h3>
             <p>{film.rt_score}</p>
             <h3>Description:</h3>
             <p>{film.description}</p>
