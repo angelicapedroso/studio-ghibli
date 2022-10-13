@@ -39,6 +39,14 @@ Para executar o projeto, basta executar o comando:
 npm start
 ```
 
+## Utilizando o Docker
+
+Para utilizar o Docker, basta executar o comando:
+
+```bash
+docker-compose up -d --build
+```
+
 ## Deploy
 
 [Link da aplicação](https://studio-ghibli-one.vercel.app/)
