@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import fetchApi from '../utils/API';
+import fetchApi from '../service/api';
 import { IPeople } from '../interfaces/People';
 
 const usePeople = () => {

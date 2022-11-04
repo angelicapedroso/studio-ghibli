@@ -2,7 +2,7 @@ import React, {
   createContext, useEffect, useMemo, useState,
 } from 'react';
 import { IFilm } from '../interfaces/Film';
-import fetchApi from '../utils/API';
+import fetchApi from '../service/api';
 
 type PropsContext = {
   films: IFilm[];

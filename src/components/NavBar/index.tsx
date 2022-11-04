@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import './styles.css';
 
-function index() {
+function NavBar() {
   return (
     <div className="container-menu">
       <input type="checkbox" className="bt_menu" id="bt_menu" />
@@ -28,4 +28,4 @@ function index() {
   );
 }
 
-export default index;
+export default NavBar;
